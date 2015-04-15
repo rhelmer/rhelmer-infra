@@ -80,6 +80,7 @@ this should be made automatic but there's no provisioning in this repo yet:
 ```
 # you can find the IP you need be looking at the Atlas e.g.:
 # https://atlas.hashicorp.com/${USER}/environments/consul-cluster/dc1/nodes/consul1
+sudo hostname collector1
 consul join <any_consul_server_ip>
 ```
 
