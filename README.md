@@ -1,5 +1,5 @@
 Terraform + Atlas Playground
-----------------------------
+============================
 
 First, you need to hook up Terraform and Atlas. You should already have 
 an Atlas account and token. This token needs to be set whenever you want
@@ -10,7 +10,7 @@ export ATLAS_TOKEN=...
 ```
 
 Setting up the Consul cluster
-=============================
+-----------------------------
 
 First, hook the ```consul-cluster``` directory up to the
 ```${USER}/consul-cluster``` environment, and push the local state and
@@ -63,7 +63,7 @@ Go to https://atlas.hashicorp.com/${USER}/environments/consul-cluster
 and you should now see "Your infrastructure is healthy".
 
 Setting up the Socorro Collector app
-====================================
+------------------------------------
 
 As above, set up Atlas as a terraform remote for the socorro-collector app:
 
