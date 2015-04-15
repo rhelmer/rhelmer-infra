@@ -75,7 +75,10 @@ popd
 ```
 
 FIXME You need to log into the box and join it to the consul cluster,
-this should be made automatic but there's no provisioning in this repo yet:
+this should be made automatic but there's no provisioning in this repo yet.
+
+Again you need to use either AWS web console or aws-cli to list the instances
+in your collector ASG and ssh into it, there should be only one:
 
 ```
 # you can find the IP you need be looking at the Atlas e.g.:
@@ -90,7 +93,7 @@ FIXME You can now bring up the app, as again there is no provisioning in this
 repo yet you need to do it by hand:
 
 ```
-sudo yum install nginx
+sudo yum install socorro nginx
 sudo systemctl start nginx socorro-collector
 ```
 
