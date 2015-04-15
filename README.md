@@ -100,7 +100,7 @@ sudo systemctl start nginx socorro-collector
 You should be able to submit crashes and get a CrashID back:
 
 ```
-curl -H 'Host: crash-reports' -F 'ProductName: Fake' -F 'Version=1.0' localhost/submit
+curl -H 'Host: crash-reports' -F 'ProductName=Fake' -F 'Version=1.0' localhost/submit
 ```
 
 Finally, you'll want to associate your ${USER}/socorro-collector environment
